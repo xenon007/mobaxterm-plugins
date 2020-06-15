@@ -1,2 +1,5 @@
-# MobaXterm plugin: OC Tool for OpsenShift
-OC Tool Moba Xterm Plugin for OpenShift
+# MobaXterm plugins: 
+* OC Tool for OpsenShift
+* Kubectl for K8s
+* Helm3
+
