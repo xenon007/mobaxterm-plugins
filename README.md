@@ -1,4 +1,5 @@
 ## MobaXterm Plugin list
+### DevOps
 * Kubectl 1.20.4
 * OC Tool 3.11 and 4.x
 * Minio RELEASE.2021-03-10T05-11-33Z
@@ -67,3 +68,7 @@ https://github.com/kubenav/kubenav/releases
 * kubeseal 0.15.0
 sealed-secrets - A Kubernetes controller and tool for one-way encrypted Secrets
 https://github.com/bitnami-labs/sealed-secrets/releases
+
+### FRNC / DevSecOps
+* yara 4.3.1
+YARA is a tool aimed at (but not limited to) helping malware researchers to identify and classify malware samples.
