@@ -4,3 +4,8 @@
 /repo/
 /res/
 /src/
+__pycache__/
+*.pyc
+/.tmp/
+/dist/
+/state/

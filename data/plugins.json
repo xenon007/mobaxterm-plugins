@@ -1,0 +1,71 @@
+{
+  "plugins": [
+    {
+      "name": "yara",
+      "branch": "plugin/yara",
+      "plugin_description": "YARA - инструмент для классификации и идентификации вредоносных образцов.",
+      "source": {
+        "type": "github",
+        "owner": "VirusTotal",
+        "repo": "yara",
+        "tag_prefix": "v",
+        "asset_patterns": [
+          {
+            "arch": "x86",
+            "pattern": "win32\\.zip$",
+            "archive_member": "yara32\\.exe$",
+            "rename_to": "yara.exe"
+          },
+          {
+            "arch": "x64",
+            "pattern": "win64\\.zip$",
+            "archive_member": "yara64\\.exe$",
+            "rename_to": "yara.exe"
+          }
+        ]
+      },
+      "release_name_template": "YARA {version}",
+      "release_body_template": "Автоматически созданный плагин YARA версии {version}."
+    },
+    {
+      "name": "k9s",
+      "branch": "plugin/k9s",
+      "plugin_description": "K9s - терминальный UI для управления Kubernetes.",
+      "source": {
+        "type": "github",
+        "owner": "derailed",
+        "repo": "k9s",
+        "tag_prefix": "v",
+        "asset_patterns": [
+          {
+            "arch": "x64",
+            "pattern": "Windows_amd64\\.zip$",
+            "archive_member": "k9s.exe"
+          }
+        ]
+      },
+      "release_name_template": "k9s {version}",
+      "release_body_template": "Плагин k9s, собранный автоматически."
+    },
+    {
+      "name": "stern",
+      "branch": "plugin/stern",
+      "plugin_description": "Stern - утилита для просмотра логов Kubernetes.",
+      "source": {
+        "type": "github",
+        "owner": "stern",
+        "repo": "stern",
+        "tag_prefix": "v",
+        "asset_patterns": [
+          {
+            "arch": "x64",
+            "pattern": "windows_amd64\\.zip$",
+            "archive_member": "stern.exe"
+          }
+        ]
+      },
+      "release_name_template": "stern {version}",
+      "release_body_template": "Плагин stern с автоматическим обновлением."
+    }
+  ]
+}
